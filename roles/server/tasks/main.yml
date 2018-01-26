@@ -1,0 +1,11 @@
+---
+- name: Adiciona o repositorio do Docker a lista
+  apt-repository: 
+    repo: curl -fsSL https://download.docker.com/linux/ubuntu/gpg
+    state: present
+
+- name: Atualiza o cache apt-get
+  apt: update_cache=yes cache_valid_time=3600
+
+- name: Instala o Docker na maquina
+  apt: name={{ docker-ce }} state=present

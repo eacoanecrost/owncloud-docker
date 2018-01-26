@@ -1,0 +1,9 @@
+---
+# Senha de root para o banco de dados
+MARIADB_ROOT_PASSWORD: password
+# Usuario do banco de dados
+MARIADB_USERNAME: tiagomoreira
+# Senha do usuario do banco
+MARIADB_PASSWORD: password
+# Nome do banco
+MARIADB_DATABASE: owncloud

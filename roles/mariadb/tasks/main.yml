@@ -1,0 +1,7 @@
+---
+- name: Instalação do container MariaDB
+  docker:
+    name: mariadb-owncloud
+    image: mariadb
+    command: mariadb-server --appendonly yes
+    state: started
